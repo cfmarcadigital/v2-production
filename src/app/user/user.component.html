@@ -1,0 +1,18 @@
+<div class="card" style="width: 25rem;">
+    <img src="{{ user.picture.large }}" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">{{ user.name.first +" " + user.name.last }}</h5>
+      <div class="card-text">
+        <ul class="list-group">
+            <li class="list-group-item">City: {{ user.location.city }}</li>
+            <li class="list-group-item">Country: {{ user.location.country }}</li>
+            <li class="list-group-item">Email: {{ user.email }}</li>
+            <li class="list-group-item">Age: {{ user.dob.age }}</li>
+            <li class="list-group-item">Phone: {{ user.phone }}</li>
+            <li class="list-group-item">Gender: {{ user.gender }}</li>
+          </ul>
+        </div>
+        <br>
+      <a href="#" class="btn btn-primary">Random User</a>
+    </div>
+</div>
